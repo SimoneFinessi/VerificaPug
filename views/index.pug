@@ -1,13 +1,14 @@
 doctype html
 html
-    head
-        title #{title}
-        link(rel='stylesheet' href='/css/style.css')
-        meta(name="viewport" content="width=device-width, initial-scale=1")
-    body
-
-
-        article.container
-            each e in animals
-                 div  #{e.razza_animale}
-
+  head
+    title Animals List
+    link(rel="stylesheet" href="styles.css")
+  body
+    header.header
+      h1 #{titolo}
+      div.container
+        div.person
+            img.person-image(src=animal.foto alt="Foto di #{animal.razza_animale}")
+            h2 #{animal.razza_animale} (#{animal.specie_animale})
+            p Area di provenienza: #{animal.area_provenienza}
+            p Rischio di estinzione: #{animal.rischio_estinzione ? 'Sì' : 'No'}

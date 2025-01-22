@@ -5,8 +5,8 @@ app.set('view engine', 'pug');
 app.use(express.static(__dirname + '/public'));
 app.get('/api/album-animali', (req, res) => {
     res.render('index', {
-        
-        animals: animals.animal
+        titolo:animals.animal.razza_animale,
+        animal: animals.animal[0]
         
     });
 });
