@@ -1,0 +1,45 @@
+{
+    "animal": [
+      {
+        "id_figurina": 1,
+        "razza_animale": "Panda Rosso",
+        "specie_animale": "Ailurus fulgens",
+        "area_provenienza": "Himalaya",
+        "rischio_estinzione": true,
+        "foto": "https://some-random-api.ml/img/red_panda"
+      },
+      {
+        "id_figurina": 2,
+        "razza_animale": "Elefante Africano",
+        "specie_animale": "Loxodonta africana",
+        "area_provenienza": "Africa Sub-Sahariana",
+        "rischio_estinzione": true,
+        "foto": "https://some-random-api.ml/img/red_panda"
+      },
+      {
+        "id_figurina": 3,
+        "razza_animale": "Cervo Sika",
+        "specie_animale": "Cervus nippon",
+        "area_provenienza": "Asia Orientale",
+        "rischio_estinzione": false,
+        "foto": "https://some-random-api.ml/img/red_panda"
+      },
+      {
+        "id_figurina": 4,
+        "razza_animale": "Lupo Grigio",
+        "specie_animale": "Canis lupus",
+        "area_provenienza": "Eurasia e Nord America",
+        "rischio_estinzione": false,
+        "foto": "https://some-random-api.ml/img/red_panda"
+      },
+      {
+        "id_figurina": 5,
+        "razza_animale": "Orso Polare",
+        "specie_animale": "Ursus maritimus",
+        "area_provenienza": "Artico",
+        "rischio_estinzione": true,
+        "foto": "https://some-random-api.ml/img/red_panda"
+      }
+    ]
+  }
+  

@@ -3,10 +3,10 @@ const animals = require('./animals.json'); //Copia il file people.json dentro la
 const app = express();
 app.set('view engine', 'pug');
 app.use(express.static(__dirname + '/public'));
-app.get('/', (req, res) => {
+app.get('/api/album-animali', (req, res) => {
     res.render('index', {
-        title: 'Homepage',
-        animals: animals
+        
+        animals: animals.animal
         
     });
 });
