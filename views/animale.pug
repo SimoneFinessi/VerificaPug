@@ -1,0 +1,11 @@
+doctype html
+html
+    head
+        title Dettagli Animale
+    body
+        h1= animal.razza_animale
+        img(src=animal.foto, alt=`Foto di ${animal.razza_animale}`)
+        p Specie: #{animal.specie_animale}
+        p Area di provenienza: #{animal.area_provenienza}
+        p Rischio estinzione: #{animal.rischio_estinzione ? 'Sì' : 'No'}
+       

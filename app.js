@@ -4,9 +4,20 @@ const app = express();
 app.set('view engine', 'pug');
 app.use(express.static(__dirname + '/public'));
 app.get('/api/album-animali', (req, res) => {
+    const animaleSelezionato = animals.animal.find(
+        (p) => String(p.id_figurina) === req.query.id
+    );
+    console.log("ciao",animaleSelezionato);
+    res.render('animale', {
+       
+        animal: animaleSelezionato
+        
+    });
+});
+app.get('/', (req, res) => {
     res.render('index', {
-        titolo:animals.animal.razza_animale,
-        animal: animals.animal[0]
+        titolo:"pagina home",
+        animal: animals.animal
         
     });
 });

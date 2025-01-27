@@ -7,8 +7,7 @@ html
     header.header
       h1 #{titolo}
       div.container
-        div.person
-            img.person-image(src=animal.foto alt="Foto di #{animal.razza_animale}")
-            h2 #{animal.razza_animale} (#{animal.specie_animale})
-            p Area di provenienza: #{animal.area_provenienza}
-            p Rischio di estinzione: #{animal.rischio_estinzione ? 'Sì' : 'No'}
+        each animale in animal
+          a(href=`/api/album-animali?id=${animale.id_figurina}`) 
+            p #{animale.razza_animale}
+        
