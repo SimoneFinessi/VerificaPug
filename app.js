@@ -7,7 +7,6 @@ app.get('/api/album-animali', (req, res) => {
     const animaleSelezionato = animals.animal.find(
         (p) => String(p.id_figurina) === req.query.id
     );
-    console.log("ciao",animaleSelezionato);
     res.render('animale', {
        
         animal: animaleSelezionato
